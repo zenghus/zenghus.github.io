@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标点丶</title>
+<title>java分类第一个文章 | 标点丶</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,16 +12,24 @@
 <link rel="stylesheet" href="https://zenghus.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="温故而知新">
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    
+    <meta name="description" content="
+当前是java分类下的第一个文章，
+后期需要记录的都在这里
+
+" />
+    <meta name="keywords" content="java" />
   </head>
   <body>
     <div id="app" class="main">
@@ -95,42 +103,37 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://zenghus.github.io/post/java-di-er-ge-wen-zhang/">
-                  <h2 class="post-title">java第二个文章</h2>
-                </a>
-                <div class="post-date">
-                  2021-06-14
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
-            <article class="post-item">
-              <div class="left">
-                <a href="https://zenghus.github.io/post/java/">
-                  <h2 class="post-title">java分类第一个文章</h2>
-                </a>
-                <div class="post-date">
-                  2021-06-14
-                </div>
-                <div class="post-abstract">
-                  
-                </div>
-              </div>
-              
-            </article>
-          
+          <div class="post-detail">
+            <h2 class="post-title">java分类第一个文章</h2>
+            <div class="post-date">2021-06-14</div>
+            
+            <div class="post-content" v-pre>
+              <ul>
+<li>当前是java分类下的第一个文章，</li>
+<li>后期需要记录的都在这里</li>
+</ul>
 
-          <div class="pagination-container">
-  
-  
-</div>
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://zenghus.github.io/tag/Axu8OaeDH/" class="tag">
+                    java
+                  </a>
+                
+              </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
 
         </div>
       </div>
@@ -156,6 +159,29 @@ var app = new Vue({
     hljs.initHighlightingOnLoad()
   </script>
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: '',
+        clientSecret: '',
+        repo: '',
+        owner: '',
+        admin: [''],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
